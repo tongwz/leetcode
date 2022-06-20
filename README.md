@@ -1,2 +1,4 @@
 # leetcode
 leetcode中算法题目的golang实现
+
+> leetcode域名是leetcode.cn这里写的代码都是为了将算法问题通过GO语言来实现，而写的记录项目，目录结构暂时还没想好后面会补充
