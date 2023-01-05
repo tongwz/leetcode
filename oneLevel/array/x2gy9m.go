@@ -8,7 +8,7 @@ import "fmt"
  * @date: 2022年6月20日16:15:02
 **/
 func removeDuplicates(nums []int) int {
-	fmt.Printf("arr的指针2是：%p", &nums)
+	fmt.Printf("arr的指针2是：%p \n", &nums)
 	for i := 0; i < len(nums); i++ {
 		if i+1 < len(nums) && nums[i] == nums[i+1] {
 			nums = append(nums[:i], nums[i+1:]...)
@@ -20,12 +20,10 @@ func removeDuplicates(nums []int) int {
 
 func main() {
 	var arr = []int{0, 0, 1, 1, 2}
-	// 如果定义成数组固定长度 会入参错误
-	//var arr = [...]int{0, 0, 1, 1, 2}
-	fmt.Printf("arr的指针是：%p", &arr)
+	fmt.Printf("arr的指针是：%p \n", &arr)
 	// 这里多一个返回值因为 切片内容修改后只会修改函数内的切片 并不会影响函数外的切片
-	last:= removeDuplicates(arr)
-	fmt.Printf("获取到的新长度为：%d, arr现在值：%+v, 指针：%p", last, arr, &arr)
+	last := removeDuplicates(arr)
+	fmt.Printf("获取到的新长度为：%d, arr现在值：%+v, 指针：%p \n", last, arr, &arr)
 }
 
 //给你一个 升序排列 的数组 nums ，请你 原地 删除重复出现的元素，使每个元素 只出现一次 ，返回删除后数组的新长度。元素的 相对顺序 应该保持 一致 。

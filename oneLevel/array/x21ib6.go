@@ -31,9 +31,9 @@ func singleNumber(nums []int) int {
 	//return halfTo - total
 
 	//for index, val := range nums {
-	//	
+	//
 	//}
-
+	return 0
 }
 
 //只出现一次的数字
